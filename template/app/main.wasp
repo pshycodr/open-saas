@@ -43,6 +43,7 @@ app OpenSaaS {
         emailVerification: {
           clientRoute: EmailVerificationRoute,
           getEmailContentFn: import { getVerificationEmailContent } from "@src/auth/email-and-pass/emails",
+          skipInDev: true
         },
         passwordReset: {
           clientRoute: PasswordResetRoute,
